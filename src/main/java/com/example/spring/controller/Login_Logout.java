@@ -1,4 +1,4 @@
-package com.example.spring.controller;
+/*package com.example.spring.controller;
 
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -21,4 +21,4 @@ class Login_Logout {
     public String Action_DashBoard(){
         return "./account/DashBoard";
     }
-}
+}*/
