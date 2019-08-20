@@ -1,4 +1,4 @@
-package com.example.spring.controller;
+package com.example.spring.controller.Organization;
 
 import java.util.Map;
 

@@ -6,7 +6,7 @@ import org.springframework.web.bind.annotation.RequestMethod;
 
 @Controller
 @RequestMapping(value = "/account")
-public class CommonCodeController {
+public class CommonCodeCont {
     @RequestMapping(value = "/LogIn", method = {RequestMethod.GET, RequestMethod.POST})
     public void LogIn(){}
     @RequestMapping(value = "/LogOut", method = {RequestMethod.GET, RequestMethod.POST})

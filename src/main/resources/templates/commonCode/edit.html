@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html xmlns:th="https://thymeleaf.org">
+    <head>
+        <script src="../static/css/jquery.min.js" th:src="@{/css/jquery.min.js}"></script>
+    </head>
+    <body>
+        <div>
+            <form th:action=@{/commonCode/show/}>
+                <span>
+                    imformation : <input type="text" name="IMF">
+                </span>
+                <button type="submit">Submit</button>
+            </form>
+        </div>
+    </body>
+</html>
