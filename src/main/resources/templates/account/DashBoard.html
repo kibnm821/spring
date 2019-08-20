@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html xmlns:th="https://thymeleaf.org">
+    <head>
+        <script src="../static/css/jquery.min.js" th:src="@{/css/jquery.min.js}"></script>
+    </head>
+    <body>
+        <p>게시판</p>
+        <a href="./LogIn.html" th:href="@{/login}">LogIn</a>
+        <a href="./LogOut.html" th:href="@{/logout}">LogOut</a>
+        <a href="./Create_Account.html" th:href="@{/Create_Account}">Create Account</a>
+        <br>
+        <a href="./DashBoard/List.html" th:href="@{/DashList}">List</a>
+        <a href="./DashBoard/Edit.html" th:href="@{/DashEdit}">Edit</a>
+        <a href="./DashBoard/Delete.html" th:href="@{/DashDel}">Delete</a>
+        <a href="./DashBoard/View.html" th:href="@{/DashView}">View</a>
+    </body>
+</html>

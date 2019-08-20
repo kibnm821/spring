@@ -11,4 +11,10 @@ class Login_Logout {
     @RequestMapping(value = "/logout")
     public void Action_Logout(){
     }
+    @RequestMapping(value = "/Create_Account")
+    public void Action_Create_Account(){
+    }
+    @RequestMapping(value = "/DashBoard")
+    public void Action_DashBoard(){
+    }
 }
