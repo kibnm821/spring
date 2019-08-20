@@ -5,16 +5,20 @@ import org.springframework.web.bind.annotation.RequestMapping;
 
 @Controller
 class Login_Logout {
-    @RequestMapping(value = "/login")
-    public void Action_Login(){
+    @RequestMapping(value = "/Login")
+    public String Action_Login(){
+        return "./account/Login";
     }
-    @RequestMapping(value = "/logout")
-    public void Action_Logout(){
+    @RequestMapping(value = "/Logout")
+    public String Action_Logout(){
+        return "./account/Logout";
     }
     @RequestMapping(value = "/Create_Account")
-    public void Action_Create_Account(){
+    public String Action_Create_Account(){
+        return "./account/Create_Account";
     }
     @RequestMapping(value = "/DashBoard")
-    public void Action_DashBoard(){
+    public String Action_DashBoard(){
+        return "./account/DashBoard";
     }
 }
