@@ -6,15 +6,19 @@ import org.springframework.web.bind.annotation.RequestMapping;
 @Controller
 class DashBoard{
     @RequestMapping(value = "/DashList")
-    public void Action_List(){
+    public String Action_List(){
+        return "./account/DashBoard/List";
     }
     @RequestMapping(value = "/DashEdit")
-    public void Action_Edit(){
+    public String Action_Edit(){
+        return "./account/DashBoard/Edit";
     }
     @RequestMapping(value = "/DashDel")
-    public void Action_Del(){
+    public String Action_Del(){
+        return "./account/DashBoard/Delete";
     }
     @RequestMapping(value = "/DashView")
-    public void Action_View(){
+    public String Action_View(){
+        return "./account/DashBoard/View";
     }
 }
