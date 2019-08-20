@@ -5,11 +5,11 @@ import org.springframework.web.bind.annotation.RequestMapping;
 
 @Controller
 class Login_Logout {
-    @RequestMapping(value = "/login")
+    @RequestMapping(value = "/Login")
     public String Action_Login(){
         return "./account/Login";
     }
-    @RequestMapping(value = "/logout")
+    @RequestMapping(value = "/Logout")
     public String Action_Logout(){
         return "./account/Logout";
     }
