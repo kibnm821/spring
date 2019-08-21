@@ -29,4 +29,10 @@ public class CommonCodeController{
         modelAndView.addObject("resultMap", resultMap);
         return modelAndView;
     }
+
+    @RequestMapping(value = "/{action}", method = RequestMethod.GET)
+    public ModelAndView search(@RequestParam Map<String,Object> paramMap,@PathVariable String action, ModelAndView modelAndView){
+        String veiwName = "/commonCode/";
+        return modelAndView;
+    }
 }
