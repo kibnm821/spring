@@ -23,7 +23,6 @@ public class CommonCodeController{
     public ModelAndView edit(@RequestParam Map<String,Object> paramMap,@PathVariable String action, ModelAndView modelAndView){
         String viewName = "/commonCode/";
         Map<String,Object> resultMap = new HashMap<String,Object>();
-
         List<Object> resultList = new ArrayList<Object>();
 
         if("show".equals(action)){
