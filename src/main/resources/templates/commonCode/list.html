@@ -5,7 +5,25 @@
     </head>
     <body>
         <div>
-            <p th:text="${resultData.SEARCH}"></p>
+            <form th:action=@{/commonCode/show/}>
+                <span>
+                    imformation : <input type="text" name="IMF">
+                </span>
+                <button type="submit">Submit</button>
+            </form>
+            <form th:action=@{/commonCode/list/}>
+                <span>
+                    <input type="text" name="SEARCH">
+                </span>
+                <button type="submit">Submit</button>
+            </form>
         </div>
+        <table>
+            <tr th:each="resultData: ${resultList}">
+                <td th:text=${resultData.NAME}></td>
+                <td th:text=${resultData.COMMON_CODE_ID}></td>
+                <td th:text=${resultData.DESCRIPTION}></td>
+            </tr>
+        </table>
     </body>
 </html>

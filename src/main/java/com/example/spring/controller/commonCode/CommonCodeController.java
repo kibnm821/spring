@@ -1,5 +1,7 @@
 package com.example.spring.controller.commonCode;
 
+import java.util.List;
+import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.Map;
 
@@ -21,18 +23,25 @@ public class CommonCodeController{
     public ModelAndView edit(@RequestParam Map<String,Object> paramMap,@PathVariable String action, ModelAndView modelAndView){
         String viewName = "/commonCode/";
         Map<String,Object> resultMap = new HashMap<String,Object>();
+
+        List<Object> resultList = new ArrayList<Object>();
+
         if("show".equals(action)){
             viewName = viewName + action;
             resultMap = paramMap;
-        }
-        modelAndView.setViewName(viewName);
-        modelAndView.addObject("resultMap", resultMap);
-        return modelAndView;
-    }
+            modelAndView.setViewName(viewName);
+            modelAndView.addObject("resultMap", resultMap);
+        }else if("list".equals(action)){
+            viewName = viewName + action;
+            Map<String,Object> data01 = new HashMap<String,Object>();
+            data01.put("NAME","name01");
+            data01.put("COMMON_CODE_ID","490293232849");
+            data01.put("DESCRIPTION","description 01");
 
-    @RequestMapping(value = "/{action}", method = RequestMethod.GET)
-    public ModelAndView search(@RequestParam Map<String,Object> paramMap,@PathVariable String action, ModelAndView modelAndView){
-        String veiwName = "/commonCode/";
+            resultList.add(data01);
+            modelAndView.setViewName(viewName);
+            modelAndView.addObject("resultList", resultList);
+        }
         return modelAndView;
     }
 }

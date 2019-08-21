@@ -5,12 +5,11 @@
     </head>
     <body>
         <div>
-            <p th:text="${resultMap.IMF}"></p>
+            <table>
+                <tr th:each="resultData: ${resultList}">
+                    <td th:text=${resultData.NAME1}></td>
+                </tr>
+            </table>
         </div>
-        <table>
-            <tr th:each="resultData: ${resultList}">
-                <td th:text=${resultData.NAME1}></td>
-            </tr>
-        </table>
     </body>
 </html>
