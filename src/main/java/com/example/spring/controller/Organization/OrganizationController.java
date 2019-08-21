@@ -10,7 +10,7 @@ import org.springframework.web.servlet.ModelAndView;
 
 @Controller
 public class OrganizationController{
-    @RequestMapping(value = "member/insert", method = RequestMethod.GET)
+    @RequestMapping(value = "/member/insert", method = RequestMethod.GET)
     public void asd(){
     }
 
