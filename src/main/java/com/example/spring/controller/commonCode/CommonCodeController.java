@@ -33,11 +33,24 @@ public class CommonCodeController{
         }else if("list".equals(action)){
             viewName = viewName + action;
             Map<String,Object> data01 = new HashMap<String,Object>();
+            Map<String,Object> data02 = new HashMap<String,Object>();
+            Map<String,Object> data03 = new HashMap<String,Object>();
             data01.put("NAME","name01");
             data01.put("COMMON_CODE_ID","490293232849");
             data01.put("DESCRIPTION","description 01");
 
+            data02.put("NAME","name01");
+            data02.put("COMMON_CODE_ID","490293232849");
+            data02.put("DESCRIPTION","description 01");
+
+            data03.put("NAME","name01");
+            data03.put("COMMON_CODE_ID","490293232849");
+            data03.put("DESCRIPTION","description 01");
+
             resultList.add(data01);
+            resultList.add(data02);
+            resultList.add(data03);
+
             modelAndView.setViewName(viewName);
             modelAndView.addObject("resultList", resultList);
         }
