@@ -15,7 +15,7 @@ public class StudentService{
     public Object getObject(Object paramMap){
         Object resultObject = respository.findAll();
         Map<String,Object> resultMap = new HashMap<String,Object>();
-        resultMap = (Map)respository.getOne((Long)paramMap.get("id"));
+        //resultMap = (Map)respository.getOne((Long)paramMap.get("id"));
         return resultObject;
     }
 }
