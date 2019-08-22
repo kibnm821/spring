@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html xmlns:th="https://thymeleaf.org">
+    <head>
+        <script src="../static/css/jquery.min.js" th:src="@{/css/jquery.min.js}"></script>
+    </head>
+    <body>
+    
+            <tr th:each="resultMap :${resultList}">
+            <td th:text="${resultMap.name}"></td>
+            </tr>
+    
+    </body>
+</html>
