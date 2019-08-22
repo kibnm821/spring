@@ -4,10 +4,12 @@
         <script src="../static/css/jquery.min.js" th:src="@{/css/jquery.min.js}"></script>
     </head>
     <body>
-    
+        <div>
             <tr th:each="resultMap :${resultList}">
-            <td th:text="${resultMap.name}"></td>
+                <td th:text= ${resultMap.id}></td>
+                <td th:text= ${resultMap.name}></td>
+                <td th:text= ${resultMap.passportNumber}></td>
             </tr>
-    
+        </div>
     </body>
 </html>
