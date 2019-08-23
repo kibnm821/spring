@@ -8,8 +8,12 @@ import org.springframework.stereotype.Repository;
 public class OrganizationDao {
     @Autowired
     private SqlSessionTemplate sqlSession;
-    public Object saveObject(String sqlMapid, Object dataMap){
+    public Object getList(String sqlMapid, Object dataMap){
         Object result = sqlSession.selectList(sqlMapid,dataMap);
+        return result;
+    }
+    public Object insertList(Object dataMap){
+        Object result = sqlSession.selectList("organization.insert",dataMap);
         return result;
     }
 }

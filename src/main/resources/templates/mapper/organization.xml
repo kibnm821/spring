@@ -12,7 +12,17 @@
         ,TELEPHONE
         ,ORDER_NUMBER
         ,PARENT_ORGANIZATION_SEQ
-        FROM CIP_ORGANIZATION
+        from CIP_ORGANIZATION
+	</select>
+	<select id="read" resultType = "Map" parameterType = "Map">
+	select
+		ORGANIZATION_SEQ
+		,NAME
+		MTELEPHONE
+		,ORDER_NUMBER
+		,PARENT_ORGANIZATION_SEQ
+		from CIP_ORGANIZATION
+		where ORGANIZATION_SEQ = #{ORGANIZATION_SEQ}
 	</select>
 
 	<insert id="merge" parameterType="Map">

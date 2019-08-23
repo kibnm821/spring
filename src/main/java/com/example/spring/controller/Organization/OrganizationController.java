@@ -21,4 +21,12 @@ public class OrganizationController{
         modelAndView.addObject("paramMap", paramMap);
         return modelAndView;
     }
+
+    @RequestMapping(value = "/member/list", method = RequestMethod.GET)
+    public ModelAndView list(@RequestParam Map<String,Object> paramMap,ModelAndView modelAndView){
+        String viewName = "/member/list";
+        modelAndView.setViewName(viewName);
+        modelAndView.addObject("paramMap", paramMap);
+        return modelAndView;
+    }
 }
